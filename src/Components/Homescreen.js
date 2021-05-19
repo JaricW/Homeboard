@@ -4,6 +4,9 @@ import Hamilton from "../Images/Hamilton.jpg";
 import ShoodaWoodaCooda from "../Images/ShoodaWoodaCooda.jpg";
 import TheLongArmoftheLaw from "../Images/TheLongArmoftheLaw.jpg";
 import YellowSubmarine from "../Images/YellowSubmarine.jpg";
+import GrimReaper from "../Images/GrimReaper.jpg";
+import TheBigSqueeze from "../Images/TheBigSqueeze.jpg";
+import LeftBehind from "../Images/LeftBehind.jpg";
 
 const Homescreen = () => {
   const [showImage, setShowImage] = useState([]);
@@ -59,6 +62,42 @@ const Homescreen = () => {
   const theLongArmoftheLaw = (
     <div className="fixed flex justify-center w-full h-screen bg-yellow-700">
       <img src={TheLongArmoftheLaw} className="max-h-screen" />
+      <button
+        className="absolute bottom-10 bg-gray-700 p-4 rounded-lg text-white"
+        onClick={() => setShowImage([])}
+      >
+        Go Back
+      </button>
+    </div>
+  );
+
+  const grimReaper = (
+    <div className="fixed flex justify-center w-full h-screen bg-yellow-700">
+      <img src={GrimReaper} className="max-h-screen" />
+      <button
+        className="absolute bottom-10 bg-gray-700 p-4 rounded-lg text-white"
+        onClick={() => setShowImage([])}
+      >
+        Go Back
+      </button>
+    </div>
+  );
+
+  const leftBehind = (
+    <div className="fixed flex justify-center w-full h-screen bg-yellow-700">
+      <img src={LeftBehind} className="max-h-screen" />
+      <button
+        className="absolute bottom-10 bg-gray-700 p-4 rounded-lg text-white"
+        onClick={() => setShowImage([])}
+      >
+        Go Back
+      </button>
+    </div>
+  );
+
+  const theBigSqueeze = (
+    <div className="fixed flex justify-center w-full h-screen bg-yellow-700">
+      <img src={TheBigSqueeze} className="max-h-screen" />
       <button
         className="absolute bottom-10 bg-gray-700 p-4 rounded-lg text-white"
         onClick={() => setShowImage([])}
@@ -145,6 +184,51 @@ const Homescreen = () => {
             <td className="p-4">
               <button
                 onClick={() => setShowImage(theLongArmoftheLaw)}
+                className="bg-gray-500 px-6"
+              >
+                View
+              </button>
+            </td>
+          </tr>
+          <tr className="p-4">
+            <td className="p-4 font-bold text-xl">The Big Squeeze</td>
+          </tr>
+          <tr>
+            <td className="p-4">6c</td>
+            <td className="p-4">**</td>
+            <td className="p-4">
+              <button
+                onClick={() => setShowImage(theBigSqueeze)}
+                className="bg-gray-500 px-6"
+              >
+                View
+              </button>
+            </td>
+          </tr>
+          <tr className="p-4">
+            <td className="p-4 font-bold text-xl">Left Behind</td>
+          </tr>
+          <tr>
+            <td className="p-4">7a</td>
+            <td className="p-4">**</td>
+            <td className="p-4">
+              <button
+                onClick={() => setShowImage(leftBehind)}
+                className="bg-gray-500 px-6"
+              >
+                View
+              </button>
+            </td>
+          </tr>
+          <tr className="p-4">
+            <td className="p-4 font-bold text-xl">Grim Reaper</td>
+          </tr>
+          <tr>
+            <td className="p-4">7b</td>
+            <td className="p-4">**</td>
+            <td className="p-4">
+              <button
+                onClick={() => setShowImage(grimReaper)}
                 className="bg-gray-500 px-6"
               >
                 View
